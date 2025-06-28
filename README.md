@@ -1,4 +1,14 @@
-# React + Vite
+# 📝 Todo App — React + Vite
+
+This is a simple and interactive todo application built using **React + Vite**, with Firebase authentication and connected to a Node.js + MongoDB backend.
+
+## 🚀 Live Demo
+
+- 🌐 **Frontend**: [https://todo-frontend-ruby-delta.vercel.app](https://todo-frontend-ruby-delta.vercel.app)
+
+---
+
+## React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
