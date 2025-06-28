@@ -2,9 +2,15 @@
 
 This is a simple and interactive todo application built using **React + Vite**, with Firebase authentication and connected to a Node.js + MongoDB backend.
 
-## 🚀 Live Demo
+## 🔗 Live Links
 
-- 🌐 **Frontend**: [https://todo-frontend-ruby-delta.vercel.app](https://todo-frontend-ruby-delta.vercel.app)
+- 🌐 **Frontend Live**: [https://todo-frontend-ruby-delta.vercel.app](https://todo-frontend-ruby-delta.vercel.app)
+- 🔧 **Backend API**: [https://todo-backend-o2ho.onrender.com](https://todo-backend-o2ho.onrender.com)
+
+## 🚀 Deployment
+
+- **Frontend (Vercel)** 👉 [Live App](https://todo-frontend-ruby-delta.vercel.app)
+- **Backend (Render)** 👉 [API Server](https://todo-backend-o2ho.onrender.com)
 
 ---
 
