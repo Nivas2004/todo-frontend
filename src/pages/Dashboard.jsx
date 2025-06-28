@@ -12,6 +12,7 @@ export default function Dashboard() {
   const [editText, setEditText] = useState("");
   const navigate = useNavigate();
   const token = localStorage.getItem("token");
+  console.log("Stored token:", token);
 
   const headers = { Authorization: `Bearer ${token}` };
 

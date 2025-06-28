@@ -25,7 +25,7 @@ export const AuthProvider = ({ children }) => {
       setToken(res.data.token);
       localStorage.setItem("token", res.data.token); // ✅ this must happen
 
-      console.log("✅ Token saved to localStorage");
+      console.log("🛡 JWT Token:", res.data.token);
     } catch (err) {
       console.error("❌ Login failed:", err.message);
     }
