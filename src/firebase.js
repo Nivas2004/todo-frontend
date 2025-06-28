@@ -1,13 +1,20 @@
+// src/firebase.js
 import { initializeApp } from "firebase/app";
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
+// ✅ Corrected Firebase config (all string values MUST be quoted!)
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  apiKey: "AIzaSyAqCIfFkbOtK231PZs3nGIEbwmuyEcv0p8",
+  authDomain: "todo-app-f2a3a.firebaseapp.com",
+  projectId: "todo-app-f2a3a",
+  storageBucket: "todo-app-f2a3a.appspot.com", // 🔁 fixed domain!
+  messagingSenderId: "157533083368",
+  appId: "1:157533083368:web:13351fd38ade3d1c731b5d"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const provider = new GoogleAuthProvider();
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
-export const loginWithGoogle = () => signInWithPopup(auth, provider);
+export { auth, provider };
