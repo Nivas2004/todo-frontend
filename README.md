@@ -1,12 +1,14 @@
-# 📝 Todo App — React + Vite
+# 📝 Todo App (Frontend)
 
-This is a simple and interactive todo application built using **React + Vite**, with Firebase authentication and connected to a Node.js + MongoDB backend.
+A modern, full-featured task manager built using **React + Vite**, with Google Authentication and real-time backend integration.
+
+---
 
 ## 🔗 Live Links
 
-- 🌐 **Frontend Live**: [https://todo-frontend-ruby-delta.vercel.app](https://todo-frontend-ruby-delta.vercel.app)
-- 🔧 **Backend API**: [https://todo-backend-o2ho.onrender.com](https://todo-backend-o2ho.onrender.com)
-
+- 🌐 **Frontend (Vercel)**: [https://todo-frontend-ruby-delta.vercel.app](https://todo-frontend-ruby-delta.vercel.app)
+- 🔧 **Backend (Render)**: [https://todo-backend-o2ho.onrender.com](https://todo-backend-o2ho.onrender.com)
+  
 ## 🚀 Deployment
 
 - **Frontend (Vercel)** 👉 [Live App](https://todo-frontend-ruby-delta.vercel.app)
@@ -14,15 +16,50 @@ This is a simple and interactive todo application built using **React + Vite**, 
 
 ---
 
-## React + Vite
+## ✨ Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 🔐 Google Sign-In (via Firebase)
+- ✅ Create, edit, delete tasks
+- 📆 Set due dates and tags
+- 👥 Share tasks with others
+- 🎯 Mark tasks as completed
+- 📱 Responsive and mobile-friendly UI
+- 🌈 Animated and themed interface
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend:
+- React + Vite
+- Firebase Auth
+- Axios
+- Custom CSS / Tailwind CSS (optional)
+- Vercel (deployment)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend (connected via REST API):
+- Node.js + Express
+- MongoDB (via Mongoose)
+- JWT Auth
+- Hosted on Render
+
+---
+
+## 📦 Getting Started (Local Development)
+
+```bash
+# Clone the frontend repo
+git clone https://github.com/YOUR_USERNAME/todo-frontend.git
+cd todo-frontend
+
+# Install dependencies
+npm install
+
+# Create a .env file and add:
+VITE_BACKEND_URL=https://todo-backend-o2ho.onrender.com
+VITE_FIREBASE_API_KEY=your_key_here
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+...
+
+# Start the app
+npm run dev
